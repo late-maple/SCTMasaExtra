@@ -1,0 +1,11 @@
+sctmasaextra:
+  gui:
+    title: "SCTMasaExtra v%1$s 配置界面"
+  hotkeys:
+    category:
+      main: "SCTMasaExtra 按键"
+  config:
+    name:
+      openConfigGui: "打开配置界面"
+    comment:
+      openConfigGui: "打开 SCTMasaExtra 的配置界面"

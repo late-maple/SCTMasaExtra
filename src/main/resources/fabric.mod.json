@@ -19,6 +19,9 @@
   "entrypoints": {
     "client": [
       "top.sctserver.sctmasaextra.SCTMasaExtraMod"
+    ],
+    "modmenu": [
+      "top.sctserver.sctmasaextra.compat.modmenu.ModMenuApiImpl"
     ]
   },
   "mixins": [

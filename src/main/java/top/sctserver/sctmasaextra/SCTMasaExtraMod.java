@@ -21,9 +21,8 @@
 package top.sctserver.sctmasaextra;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.metadata.ModMetadata;
+import top.sctserver.sctmasaextra.config.MalilibInitializer;
 
 //#if MC >= 1.18.2
 //$$ import com.mojang.logging.LogUtils;
@@ -50,6 +49,6 @@ public class SCTMasaExtraMod implements ClientModInitializer
 	@Override
 	public void onInitializeClient() {
 		MOD_VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(RuntimeException::new).getMetadata().getVersion().getFriendlyString();
-
+		MalilibInitializer.init();
 	}
 }

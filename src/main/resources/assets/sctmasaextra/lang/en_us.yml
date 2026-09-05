@@ -1,0 +1,11 @@
+sctmasaextra:
+  gui:
+    title: "SCTMasaExtra v%1$s Config"
+  hotkeys:
+    category:
+      main: "SCTMasaExtra Hotkeys"
+  config:
+    name:
+      openConfigGui: "Open Config GUI"
+    comment:
+      openConfigGui: "Open the SCTMasaExtra config GUI"
