@@ -32,6 +32,9 @@ repositories {
 		url = 'https://maven.terraformersmc.com/releases'
 		content { includeGroup('com.terraformersmc') }
 	}
+	mavenCentral() {
+		content { includeGroup('io.github.llamalad7') }
+	}
 }
 
 dependencies {
@@ -67,6 +70,10 @@ dependencies {
 
 	// modmenu: compile only in dev, same as TweakerMore for mc 1.21.6+ / 26.x
 	autoCompileOnly "com.terraformersmc:modmenu:${project.mod_menu_version}"
+
+	// MixinExtras: runtime is bundled with fabric loader, compile against the same version
+	autoCompileOnly "io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"
+	annotationProcessor "io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"
 
 	// fabric api modules required by malilib at runtime
 	autoRuntimeOnly fabricApi.module("fabric-screen-api-v1", project.fabric_api_version)

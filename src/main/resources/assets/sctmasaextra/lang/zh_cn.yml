@@ -7,5 +7,7 @@ sctmasaextra:
   config:
     name:
       openConfigGui: "打开配置界面"
+      creativeDisableBlockTypeBreakRestriction: "创造模式禁用方块破坏类型限制"
     comment:
       openConfigGui: "打开 SCTMasaExtra 的配置界面"
+      creativeDisableBlockTypeBreakRestriction: "启用后，创造模式下不再受 tweakeroo 的方块破坏类型限制（黑/白名单）影响，破坏位置限制与破坏网格不受影响。"

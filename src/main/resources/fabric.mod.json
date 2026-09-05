@@ -33,6 +33,7 @@
     "minecraft": "${minecraft_dependency}",
     "malilib": "${malilib_dependency}",
     "tweakeroo": "${tweakeroo_dependency}",
-    "litematica": "${litematica_dependency}"
+    "litematica": "${litematica_dependency}",
+    "mixinextras": ">=0.3.0"
   }
 }

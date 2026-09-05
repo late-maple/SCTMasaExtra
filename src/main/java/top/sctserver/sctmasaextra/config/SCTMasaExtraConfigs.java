@@ -23,6 +23,7 @@ package top.sctserver.sctmasaextra.config;
 import java.util.List;
 import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigBase;
+import fi.dy.masa.malilib.config.options.ConfigBoolean;
 import fi.dy.masa.malilib.config.options.ConfigHotkey;
 import top.sctserver.sctmasaextra.SCTMasaExtraMod;
 import top.sctserver.sctmasaextra.gui.SCTMasaExtraConfigGui;
@@ -35,7 +36,10 @@ public class SCTMasaExtraConfigs
 
 	public static final ConfigHotkey OPEN_CONFIG_GUI = new ConfigHotkey("openConfigGui", "K,C").apply(CONFIG_TRANSLATION_PREFIX);
 
-	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of();
+	public static final ConfigBoolean CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION =
+			new ConfigBoolean("creativeDisableBlockTypeBreakRestriction", true).apply(CONFIG_TRANSLATION_PREFIX);
+
+	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION);
 	private static final List<IConfigBase> HOTKEY_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI);
 
 	public static List<IConfigBase> getGenericOptions()

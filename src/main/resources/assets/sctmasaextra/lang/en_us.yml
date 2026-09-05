@@ -7,5 +7,7 @@ sctmasaextra:
   config:
     name:
       openConfigGui: "Open Config GUI"
+      creativeDisableBlockTypeBreakRestriction: "Disable Block Type Break Restriction in Creative"
     comment:
       openConfigGui: "Open the SCTMasaExtra config GUI"
+      creativeDisableBlockTypeBreakRestriction: "When enabled, tweakeroo's block type break restriction (blacklist/whitelist) no longer applies while you are in creative mode. Breaking restriction and breaking grid keep working normally."

@@ -3,9 +3,8 @@
   "minVersion": "0.8",
   "package": "top.sctserver.sctmasaextra.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
-  "mixins": [
-  ],
   "client": [
+    "tweakeroo/MixinPositionAllowedByBreakingRestriction"
   ],
   "injectors": {
     "defaultRequire": 1
