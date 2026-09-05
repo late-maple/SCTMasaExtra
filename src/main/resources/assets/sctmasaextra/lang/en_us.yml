@@ -1,6 +1,10 @@
 sctmasaextra:
   gui:
     title: "SCTMasaExtra v%1$s Config"
+    button:
+      config_gui:
+        generic: "Generic"
+        toggles: "Feature Toggles"
   hotkeys:
     category:
       main: "SCTMasaExtra Hotkeys"

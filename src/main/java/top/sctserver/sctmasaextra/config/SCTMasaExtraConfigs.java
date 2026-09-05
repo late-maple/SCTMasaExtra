@@ -39,24 +39,24 @@ public class SCTMasaExtraConfigs
 	public static final ConfigBoolean CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION =
 			new ConfigBoolean("creativeDisableBlockTypeBreakRestriction", true).apply(CONFIG_TRANSLATION_PREFIX);
 
-	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION);
-	private static final List<IConfigBase> HOTKEY_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI);
+	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI);
+	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION);
 
 	public static List<IConfigBase> getGenericOptions()
 	{
 		return GENERIC_OPTIONS;
 	}
 
-	public static List<IConfigBase> getHotkeyOptions()
+	public static List<IConfigBase> getToggleOptions()
 	{
-		return HOTKEY_OPTIONS;
+		return TOGGLE_OPTIONS;
 	}
 
 	public static List<IConfigBase> getAllOptions()
 	{
 		return ImmutableList.<IConfigBase>builder()
 				.addAll(GENERIC_OPTIONS)
-				.addAll(HOTKEY_OPTIONS)
+				.addAll(TOGGLE_OPTIONS)
 				.build();
 	}
 

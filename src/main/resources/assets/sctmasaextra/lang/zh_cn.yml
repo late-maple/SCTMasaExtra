@@ -1,6 +1,10 @@
 sctmasaextra:
   gui:
     title: "SCTMasaExtra v%1$s 配置界面"
+    button:
+      config_gui:
+        generic: "通用"
+        toggles: "特性开关"
   hotkeys:
     category:
       main: "SCTMasaExtra 按键"

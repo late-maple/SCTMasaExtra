@@ -55,7 +55,7 @@ public class SCTMasaExtraConfigStorage implements IConfigHandler
 			if (element instanceof JsonObject root)
 			{
 				ConfigUtils.readConfigBase(root, "Generic", SCTMasaExtraConfigs.getGenericOptions());
-				ConfigUtils.readConfigBase(root, "Hotkeys", SCTMasaExtraConfigs.getHotkeyOptions());
+				ConfigUtils.readConfigBase(root, "Toggles", SCTMasaExtraConfigs.getToggleOptions());
 			}
 		}
 	}
@@ -66,7 +66,7 @@ public class SCTMasaExtraConfigStorage implements IConfigHandler
 		JsonObject root = new JsonObject();
 
 		ConfigUtils.writeConfigBase(root, "Generic", SCTMasaExtraConfigs.getGenericOptions());
-		ConfigUtils.writeConfigBase(root, "Hotkeys", SCTMasaExtraConfigs.getHotkeyOptions());
+		ConfigUtils.writeConfigBase(root, "Toggles", SCTMasaExtraConfigs.getToggleOptions());
 
 		JsonUtils.writeJsonToFile(root, getConfigFile().toPath());
 	}
