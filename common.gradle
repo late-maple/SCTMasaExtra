@@ -75,8 +75,8 @@ dependencies {
 //	}
 }
 
-String MIXIN_CONFIG_PATH = 'template_mod.mixins.json'
-String LANG_DIR = 'assets/template_mod/lang'
+String MIXIN_CONFIG_PATH = 'sctmasaextra.mixins.json'
+String LANG_DIR = 'assets/sctmasaextra/lang'
 JavaVersion JAVA_COMPATIBILITY
 if (mcVersion >= 260000) {
 	JAVA_COMPATIBILITY = JavaVersion.VERSION_25
@@ -244,7 +244,7 @@ license {
 	}
 	ext {
 		name = project.mod_name
-		author = 'Fallen_Breath'
+		author = 'late_maple'
 		year = Calendar.getInstance().get(Calendar.YEAR).toString()
 	}
 }
