@@ -20,6 +20,7 @@
 
 package top.sctserver.sctmasaextra;
 
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.metadata.ModMetadata;
@@ -32,7 +33,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 //#endif
 
-public class SCTMasaExtraMod implements ModInitializer
+public class SCTMasaExtraMod implements ClientModInitializer
 {
 	public static final Logger LOGGER =
 			//#if MC >= 11802
@@ -43,13 +44,12 @@ public class SCTMasaExtraMod implements ModInitializer
 
 	public static final String MOD_ID = "sctmasaextra";
 	public static String MOD_VERSION = "unknown";
-	public static String MOD_NAME = "unknown";
+	public static String MOD_NAME = "SCTMasaExtra";
+
 
 	@Override
-	public void onInitialize()
-	{
-		ModMetadata metadata = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(RuntimeException::new).getMetadata();
-		MOD_NAME = metadata.getName();
-		MOD_VERSION = metadata.getVersion().getFriendlyString();
+	public void onInitializeClient() {
+		MOD_VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(RuntimeException::new).getMetadata().getVersion().getFriendlyString();
+
 	}
 }

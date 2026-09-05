@@ -4,7 +4,6 @@
   "package": "top.sctserver.sctmasaextra.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "mixins": [
-    "MinecraftServerMixin"
   ],
   "client": [
   ],
