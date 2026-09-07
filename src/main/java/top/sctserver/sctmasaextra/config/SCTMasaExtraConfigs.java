@@ -35,7 +35,7 @@ public class SCTMasaExtraConfigs
 	// "sctmasaextra.config.comment.<option>" and "sctmasaextra.config.prettyName.<option>" from this prefix
 	public static final String CONFIG_TRANSLATION_PREFIX = SCTMasaExtraMod.MOD_ID + ".config";
 
-	public static final ConfigHotkey OPEN_CONFIG_GUI = new ConfigHotkey("openConfigGui", "K,C").apply(CONFIG_TRANSLATION_PREFIX);
+	public static final ConfigHotkey OPEN_CONFIG_GUI = new ConfigHotkey("openConfigGui", "S,C").apply(CONFIG_TRANSLATION_PREFIX);
 
 	public static final ConfigBoolean CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION =
 			new ConfigBoolean("creativeDisableBlockTypeBreakRestriction", true).apply(CONFIG_TRANSLATION_PREFIX);
