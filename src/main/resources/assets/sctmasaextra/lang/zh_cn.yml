@@ -12,6 +12,10 @@ sctmasaextra:
     name:
       openConfigGui: "打开配置界面"
       creativeDisableBlockTypeBreakRestriction: "创造模式禁用方块破坏类型限制"
+      creativeSingleClickBreakProtect: "创造模式单击破坏保护"
+      creativeBreakHoldThresholdTicks: "连续破坏按住阈值（tick）"
     comment:
       openConfigGui: "打开 SCTMasaExtra 的配置界面"
       creativeDisableBlockTypeBreakRestriction: "启用后，创造模式下不再受 tweakeroo 的方块破坏类型限制（黑/白名单）影响，破坏位置限制与破坏网格不受影响。"
+      creativeSingleClickBreakProtect: "启用后，当 tweakeroo 的 disableBlockBreakCooldown（移除方块破坏间隔）开启时，创造模式下单击左键只会破坏当前瞄准的一个方块；按住左键达到下方阈值后，才会开始无间隔连续破坏。"
+      creativeBreakHoldThresholdTicks: "按住攻击键达到该 tick 数后，被移除的破坏间隔才会生效并开始连续破坏；短于该时长的按键判定为单击，只破坏一个方块。默认 5 tick（250ms），与原版破坏间隔一致。"

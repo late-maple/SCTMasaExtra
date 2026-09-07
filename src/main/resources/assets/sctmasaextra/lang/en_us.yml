@@ -12,6 +12,10 @@ sctmasaextra:
     name:
       openConfigGui: "Open Config GUI"
       creativeDisableBlockTypeBreakRestriction: "Disable Block Type Break Restriction in Creative"
+      creativeSingleClickBreakProtect: "Single Click Break Protect in Creative"
+      creativeBreakHoldThresholdTicks: "Break Hold Threshold (ticks)"
     comment:
       openConfigGui: "Open the SCTMasaExtra config GUI"
       creativeDisableBlockTypeBreakRestriction: "When enabled, tweakeroo's block type break restriction (blacklist/whitelist) no longer applies while you are in creative mode. Breaking restriction and breaking grid keep working normally."
+      creativeSingleClickBreakProtect: "When enabled and tweakeroo's disableBlockBreakCooldown is on, a single (short) left click in creative mode breaks only the targeted block. Fast continuous breaking starts once the attack key has been held for the threshold below."
+      creativeBreakHoldThresholdTicks: "How many ticks the attack key must stay held before the removed break cooldown takes effect and continuous breaking starts. Presses shorter than this count as a single click and only break one block. Default 5 ticks (250 ms) matches the vanilla break cooldown."

@@ -25,6 +25,7 @@ import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigBase;
 import fi.dy.masa.malilib.config.options.ConfigBoolean;
 import fi.dy.masa.malilib.config.options.ConfigHotkey;
+import fi.dy.masa.malilib.config.options.ConfigInteger;
 import top.sctserver.sctmasaextra.SCTMasaExtraMod;
 import top.sctserver.sctmasaextra.gui.SCTMasaExtraConfigGui;
 
@@ -39,8 +40,14 @@ public class SCTMasaExtraConfigs
 	public static final ConfigBoolean CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION =
 			new ConfigBoolean("creativeDisableBlockTypeBreakRestriction", true).apply(CONFIG_TRANSLATION_PREFIX);
 
-	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI);
-	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION);
+	public static final ConfigBoolean CREATIVE_SINGLE_CLICK_BREAK_PROTECT =
+			new ConfigBoolean("creativeSingleClickBreakProtect", true).apply(CONFIG_TRANSLATION_PREFIX);
+
+	public static final ConfigInteger CREATIVE_BREAK_HOLD_THRESHOLD_TICKS =
+			new ConfigInteger("creativeBreakHoldThresholdTicks", 3, 1, 20).apply(CONFIG_TRANSLATION_PREFIX);
+
+	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI, CREATIVE_BREAK_HOLD_THRESHOLD_TICKS);
+	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT);
 
 	public static List<IConfigBase> getGenericOptions()
 	{

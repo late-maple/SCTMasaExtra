@@ -4,6 +4,8 @@
   "package": "top.sctserver.sctmasaextra.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "client": [
+    "minecraft/MixinMinecraft",
+    "minecraft/MixinMultiPlayerGameMode",
     "tweakeroo/MixinPositionAllowedByBreakingRestriction"
   ],
   "injectors": {
