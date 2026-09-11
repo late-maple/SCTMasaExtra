@@ -4,6 +4,8 @@
   "package": "top.sctserver.sctmasaextra.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "client": [
+    "litematica/MixinEasyPlaceUtils",
+    "litematica/MixinPlacementHandler",
     "minecraft/MixinMinecraft",
     "minecraft/MixinMultiPlayerGameMode",
     "tweakeroo/MixinPositionAllowedByBreakingRestriction"

@@ -43,11 +43,14 @@ public class SCTMasaExtraConfigs
 	public static final ConfigBoolean CREATIVE_SINGLE_CLICK_BREAK_PROTECT =
 			new ConfigBoolean("creativeSingleClickBreakProtect", true).apply(CONFIG_TRANSLATION_PREFIX);
 
+	public static final ConfigBoolean EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX =
+			new ConfigBoolean("easyPlaceIncompleteLargeChestFix", true).apply(CONFIG_TRANSLATION_PREFIX);
+
 	public static final ConfigInteger CREATIVE_BREAK_HOLD_THRESHOLD_TICKS =
 			new ConfigInteger("creativeBreakHoldThresholdTicks", 3, 1, 20).apply(CONFIG_TRANSLATION_PREFIX);
 
 	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI, CREATIVE_BREAK_HOLD_THRESHOLD_TICKS);
-	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT);
+	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT, EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX);
 
 	public static List<IConfigBase> getGenericOptions()
 	{
