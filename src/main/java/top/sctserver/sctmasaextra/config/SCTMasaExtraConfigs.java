@@ -27,6 +27,8 @@ import fi.dy.masa.malilib.config.options.ConfigBoolean;
 import fi.dy.masa.malilib.config.options.ConfigHotkey;
 import fi.dy.masa.malilib.config.options.ConfigInteger;
 import top.sctserver.sctmasaextra.SCTMasaExtraMod;
+import top.sctserver.sctmasaextra.config.options.SCTMasaExtraConfigOptionList;
+import top.sctserver.sctmasaextra.config.options.SCTMasaExtraConfigStringList;
 import top.sctserver.sctmasaextra.gui.SCTMasaExtraConfigGui;
 
 public class SCTMasaExtraConfigs
@@ -49,8 +51,24 @@ public class SCTMasaExtraConfigs
 	public static final ConfigInteger CREATIVE_BREAK_HOLD_THRESHOLD_TICKS =
 			new ConfigInteger("creativeBreakHoldThresholdTicks", 3, 1, 20).apply(CONFIG_TRANSLATION_PREFIX);
 
-	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI, CREATIVE_BREAK_HOLD_THRESHOLD_TICKS);
-	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT, EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX);
+	public static final ConfigBoolean SPECTATOR_TELEPORT_MENU_FILTER_FAKE_PLAYERS =
+			new ConfigBoolean("spectatorTeleportMenuFilterFakePlayers", false).apply(CONFIG_TRANSLATION_PREFIX);
+
+	public static final SCTMasaExtraConfigOptionList SPECTATOR_TELEPORT_MENU_FILTER_MODE =
+			new SCTMasaExtraConfigOptionList("spectatorTeleportMenuFilterMode", SpectatorTeleportMenuFilterMode.DEFAULT);
+
+	public static final SCTMasaExtraConfigStringList FAKE_PLAYER_TEAM_LIST =
+			new SCTMasaExtraConfigStringList("fakePlayerTeamList", ImmutableList.of());
+
+	public static final SCTMasaExtraConfigStringList FAKE_PLAYER_PREFIX_LIST =
+			new SCTMasaExtraConfigStringList("fakePlayerPrefixList", ImmutableList.of());
+
+	public static final SCTMasaExtraConfigStringList FAKE_PLAYER_SUFFIX_LIST =
+			new SCTMasaExtraConfigStringList("fakePlayerSuffixList", ImmutableList.of());
+
+	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI, CREATIVE_BREAK_HOLD_THRESHOLD_TICKS,
+			SPECTATOR_TELEPORT_MENU_FILTER_MODE, FAKE_PLAYER_TEAM_LIST, FAKE_PLAYER_PREFIX_LIST, FAKE_PLAYER_SUFFIX_LIST);
+	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT, EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX, SPECTATOR_TELEPORT_MENU_FILTER_FAKE_PLAYERS);
 
 	public static List<IConfigBase> getGenericOptions()
 	{

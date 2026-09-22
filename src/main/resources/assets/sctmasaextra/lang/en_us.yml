@@ -15,9 +15,28 @@ sctmasaextra:
       creativeSingleClickBreakProtect: "Single Click Break Protect in Creative"
       easyPlaceIncompleteLargeChestFix: "Fix Easy Place Incomplete Large Chests"
       creativeBreakHoldThresholdTicks: "Break Hold Threshold (ticks)"
+      spectatorTeleportMenuFilterFakePlayers: "Filter Fake Players in Spectator Main Teleport List"
     comment:
       openConfigGui: "Open the SCTMasaExtra config GUI"
       creativeDisableBlockTypeBreakRestriction: "When enabled, tweakeroo's block type break restriction (blacklist/whitelist) no longer applies while you are in creative mode. Breaking restriction and breaking grid keep working normally."
       creativeSingleClickBreakProtect: "When enabled and tweakeroo's disableBlockBreakCooldown is on, a single (short) left click in creative mode breaks only the targeted block. Fast continuous breaking starts once the attack key has been held for the threshold below."
       easyPlaceIncompleteLargeChestFix: "When enabled, litematica's easy place no longer requests the left or right half of a large chest while the other half is missing from the world. The chest is placed as a normal single chest instead, and once the other half is placed, a block update merges the two into a complete large chest. This also fixes hoppers being unable to access the large chest until the chunk gets reloaded (litematica issue #241)."
       creativeBreakHoldThresholdTicks: "How many ticks the attack key must stay held before the removed break cooldown takes effect and continuous breaking starts. Presses shorter than this count as a single click and only break one block. Default 5 ticks (250 ms) matches the vanilla break cooldown."
+      spectatorTeleportMenuFilterFakePlayers: "When enabled, the spectator menu's main teleport list (the Teleport to Player page) filters out fake players (such as Carpet /player bots) and only shows real players. How a player is considered fake is determined by the filter mode and the corresponding lists below."
+    spectatorTeleportMenuFilterMode:
+      .: "Fake Player Filter Mode"
+      comment: "How players (fake players) are filtered from the spectator main teleport list: Team - all players in the teams from the fake player team list are filtered out; Prefix - players whose name starts with any prefix in the fake player prefix list are filtered out; Suffix - players whose name ends with any suffix in the fake player suffix list are filtered out."
+    fakePlayerTeamList:
+      .: "Fake Player Team List"
+      comment: "All players in the teams listed here are filtered out from the spectator main teleport list (used by the Team filter mode)."
+    fakePlayerPrefixList:
+      .: "Fake Player Prefix List"
+      comment: "Players whose name starts with any prefix in this list are considered fake players (used by the Prefix filter mode)."
+    fakePlayerSuffixList:
+      .: "Fake Player Suffix List"
+      comment: "Players whose name ends with any suffix in this list are considered fake players (used by the Suffix filter mode)."
+  list_entry:
+    spectatorTeleportMenuFilterMode:
+      team: "Team"
+      prefix: "Prefix"
+      suffix: "Suffix"
