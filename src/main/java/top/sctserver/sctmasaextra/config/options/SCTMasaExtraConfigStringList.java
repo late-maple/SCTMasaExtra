@@ -22,11 +22,18 @@ package top.sctserver.sctmasaextra.config.options;
 
 import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.options.ConfigStringList;
+import fi.dy.masa.malilib.util.StringUtils;
 
 public class SCTMasaExtraConfigStringList extends ConfigStringList implements SCTMasaExtraIConfigBase
 {
 	public SCTMasaExtraConfigStringList(String name, ImmutableList<String> defaultValue)
 	{
 		super(name, defaultValue, SCTMasaExtraIConfigBase.NAMESPACE_PREFIX + name + SCTMasaExtraIConfigBase.COMMENT_SUFFIX);
+	}
+
+	@Override
+	public String getComment()
+	{
+		return StringUtils.translate(SCTMasaExtraIConfigBase.NAMESPACE_PREFIX + this.getName() + SCTMasaExtraIConfigBase.COMMENT_SUFFIX);
 	}
 }

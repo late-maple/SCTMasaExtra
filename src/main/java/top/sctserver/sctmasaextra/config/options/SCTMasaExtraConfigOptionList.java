@@ -22,11 +22,18 @@ package top.sctserver.sctmasaextra.config.options;
 
 import fi.dy.masa.malilib.config.IConfigOptionListEntry;
 import fi.dy.masa.malilib.config.options.ConfigOptionList;
+import fi.dy.masa.malilib.util.StringUtils;
 
 public class SCTMasaExtraConfigOptionList extends ConfigOptionList implements SCTMasaExtraIConfigBase
 {
 	public SCTMasaExtraConfigOptionList(String name, IConfigOptionListEntry defaultValue)
 	{
 		super(name, defaultValue, SCTMasaExtraIConfigBase.NAMESPACE_PREFIX + name + SCTMasaExtraIConfigBase.COMMENT_SUFFIX);
+	}
+
+	@Override
+	public String getComment()
+	{
+		return StringUtils.translate(SCTMasaExtraIConfigBase.NAMESPACE_PREFIX + this.getName() + SCTMasaExtraIConfigBase.COMMENT_SUFFIX);
 	}
 }

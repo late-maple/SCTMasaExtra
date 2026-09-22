@@ -29,6 +29,12 @@ import top.sctserver.sctmasaextra.SCTMasaExtraMod;
  * the GUI display name is translated from {@code <modid>.config.<name>} and the comment
  * from {@code <modid>.config.<name>.comment}, instead of malilib's classic
  * {@code <prefix>.name.<name>} / {@code <prefix>.comment.<name>} scheme.
+ *
+ * <p>{@link #getConfigGuiDisplayName()} can live here as a default method, but
+ * {@link #getComment()} cannot: malilib's {@code ConfigBase} already implements it
+ * concretely, and a superclass method always takes precedence over interface defaults
+ * ( TweakerMore solves this with a ConfigBaseMixin instead ). Implementors must
+ * override {@link #getComment()} themselves, see the two wrapper classes in this package.
  */
 public interface SCTMasaExtraIConfigBase extends IConfigBase
 {
