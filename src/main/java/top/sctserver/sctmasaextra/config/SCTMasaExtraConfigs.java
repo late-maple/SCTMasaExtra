@@ -54,6 +54,9 @@ public class SCTMasaExtraConfigs
 	public static final ConfigBoolean SPECTATOR_TELEPORT_MENU_FILTER_FAKE_PLAYERS =
 			new ConfigBoolean("spectatorTeleportMenuFilterFakePlayers", false).apply(CONFIG_TRANSLATION_PREFIX);
 
+	public static final ConfigBoolean SKIP_COMMAND_PERMISSION_CONFIRM =
+			new ConfigBoolean("skipCommandPermissionConfirm", true).apply(CONFIG_TRANSLATION_PREFIX);
+
 	public static final SCTMasaExtraConfigOptionList SPECTATOR_TELEPORT_MENU_FILTER_MODE =
 			new SCTMasaExtraConfigOptionList("spectatorTeleportMenuFilterMode", SpectatorTeleportMenuFilterMode.DEFAULT);
 
@@ -68,7 +71,7 @@ public class SCTMasaExtraConfigs
 
 	private static final List<IConfigBase> GENERIC_OPTIONS = ImmutableList.of(OPEN_CONFIG_GUI, CREATIVE_BREAK_HOLD_THRESHOLD_TICKS,
 			SPECTATOR_TELEPORT_MENU_FILTER_MODE, FAKE_PLAYER_TEAM_LIST, FAKE_PLAYER_PREFIX_LIST, FAKE_PLAYER_SUFFIX_LIST);
-	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT, EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX, SPECTATOR_TELEPORT_MENU_FILTER_FAKE_PLAYERS);
+	private static final List<IConfigBase> TOGGLE_OPTIONS = ImmutableList.of(CREATIVE_DISABLE_BLOCK_TYPE_BREAK_RESTRICTION, CREATIVE_SINGLE_CLICK_BREAK_PROTECT, EASY_PLACE_INCOMPLETE_LARGE_CHEST_FIX, SPECTATOR_TELEPORT_MENU_FILTER_FAKE_PLAYERS, SKIP_COMMAND_PERMISSION_CONFIRM);
 
 	public static List<IConfigBase> getGenericOptions()
 	{

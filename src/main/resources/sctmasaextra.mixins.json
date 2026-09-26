@@ -4,12 +4,13 @@
   "package": "top.sctserver.sctmasaextra.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "client": [
-    "litematica/MixinEasyPlaceUtils",
-    "litematica/MixinPlacementHandler",
-    "minecraft/MixinMinecraft",
-    "minecraft/MixinMultiPlayerGameMode",
-    "minecraft/MixinTeleportToPlayerMenuCategory",
-    "tweakeroo/MixinPositionAllowedByBreakingRestriction"
+    "litematica.MixinEasyPlaceUtils",
+    "litematica.MixinPlacementHandler",
+    "minecraft.MixinClientPacketListener",
+    "minecraft.MixinMinecraft",
+    "minecraft.MixinMultiPlayerGameMode",
+    "minecraft.MixinTeleportToPlayerMenuCategory",
+    "tweakeroo.MixinPositionAllowedByBreakingRestriction"
   ],
   "injectors": {
     "defaultRequire": 1

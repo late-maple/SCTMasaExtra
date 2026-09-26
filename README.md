@@ -6,6 +6,8 @@ Some extra tweaks for masa's mods, made for the SCT server.
 
 - **creativeDisableBlockTypeBreakRestriction** : When enabled, tweakeroo's block type break restriction (blacklist/whitelist) no longer applies in creative mode. Breaking restriction and breaking grid keep working normally.
 - **creativeSingleClickBreakProtect** : When enabled (together with tweakeroo's *Disable Block Break Cooldown*), a short left click in creative mode only breaks the targeted block instead of a whole line. Fast continuous breaking starts once the attack key has been held longer than **creativeBreakHoldThresholdTicks** (default 3 ticks / 150 ms, range 1-20).
+- **spectatorTeleportMenuFilterFakePlayers** : When enabled, the spectator menu's main teleport list filters out fake players (such as Carpet `/player` bots).
+- **skipCommandPermissionConfirm** : When enabled, running a command from a chat run_command click event or a server dialog no longer shows the "requires elevated permissions" confirmation screen; the command is sent directly and the server still rejects it as usual if the permission is actually missing.
 - **openConfigGui** : Open the config GUI with `S, C` (configurable), or via Mod Menu. Config is stored in `config/sctmasaextra.json`.
 
 ## Dependencies

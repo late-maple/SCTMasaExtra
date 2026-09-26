@@ -16,6 +16,7 @@ sctmasaextra:
       easyPlaceIncompleteLargeChestFix: "修复轻松放置残缺大箱子"
       creativeBreakHoldThresholdTicks: "连续破坏按住阈值（tick）"
       spectatorTeleportMenuFilterFakePlayers: "旁观者主传送列表过滤假人"
+      skipCommandPermissionConfirm: "跳过命令权限确认弹窗"
     comment:
       openConfigGui: "打开 SCTMasaExtra 的配置界面"
       creativeDisableBlockTypeBreakRestriction: "启用后，创造模式下不再受 tweakeroo 的方块破坏类型限制（黑/白名单）影响，破坏位置限制与破坏网格不受影响。"
@@ -23,6 +24,7 @@ sctmasaextra:
       easyPlaceIncompleteLargeChestFix: "启用后，litematica 的 easy place 在大箱子的另一半尚未放置时，不再请求放置左半或右半大箱子，而是先放置一个普通的单个箱子；待另一半放置后，经原版方块更新自动合并为完整的大箱子。同时修复了合并之前漏斗无法访问该箱子、需要重新加载区块才能恢复的问题（litematica issue #241）。"
       creativeBreakHoldThresholdTicks: "按住攻击键达到该 tick 数后，被移除的破坏间隔才会生效并开始连续破坏；短于该时长的按键判定为单击，只破坏一个方块。默认 5 tick（250ms），与原版破坏间隔一致。"
       spectatorTeleportMenuFilterFakePlayers: "启用后，旁观者菜单的主传送列表（「传送到玩家」页面）会过滤掉假人（如 Carpet /player 生成的假玩家），只显示真实玩家。判定玩家的方式由「假人过滤模式」及对应的列表决定。"
+      skipCommandPermissionConfirm: "启用后，点击聊天中的命令按钮（run_command 点击事件）或通过服务器对话框执行命令时，不再弹出「你尝试执行的命令需要较高的权限」确认弹窗，而是直接发送命令；若权限确实不足，服务器仍会照常拒绝。命令解析错误与需要签名的确认弹窗不受影响。"
     spectatorTeleportMenuFilterMode:
       .: "假人过滤模式"
       comment: "旁观者主传送列表中过滤玩家（假人）的方式：队伍——假人队伍列表中队伍里的所有玩家都会被过滤；前缀——玩家名以假人前缀列表中任一前缀开头的会被过滤；后缀——玩家名以假人后缀列表中任一后缀结尾的会被过滤。"
